@@ -38,9 +38,6 @@ $foo(function (callable(callable(callable(B))) $cb) {
     });
 });
 
-$a = function (callable($a) $cb) { $cb(1); };
-$a(function ($a, $b = null) {});
-
 $a = function (callable(callable(A $a)) $cb) { $cb(function (A $a) {}); };
 $a(function (callable(B $a, $b) $cb) { $cb(new B, 1); });
 
